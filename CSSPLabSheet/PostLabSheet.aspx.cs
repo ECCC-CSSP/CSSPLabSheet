@@ -97,6 +97,11 @@ namespace CSSPLabSheet
                 return string.Format(LabSheetViewRes._IsRequired, "FileName");
             }
 
+            if (FileName.EndsWith("_S.txt"))
+            {
+                return LabSheetViewRes.OnlyLabSheetEndingWithStxtIsAllowed;
+            }
+
             FileLastModifiedDate_LocalText = Request.Params["FileLastModifiedDate_Local"];
             List<string> stringList = FileLastModifiedDate_LocalText.Split(",".ToCharArray(), StringSplitOptions.None).ToList();
             int FileYear = -1;

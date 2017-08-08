@@ -68,5 +68,14 @@ namespace CSSPLabSheet.Resources {
                 return ResourceManager.GetString("_IsRequired", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Only lab sheet ending with _S.txt is allowed.
+        /// </summary>
+        public static string OnlyLabSheetEndingWithStxtIsAllowed {
+            get {
+                return ResourceManager.GetString("OnlyLabSheetEndingWithStxtIsAllowed", resourceCulture);
+            }
+        }
     }
 }
